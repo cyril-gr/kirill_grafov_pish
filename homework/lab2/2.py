@@ -1,0 +1,13 @@
+def nod(a, b):
+    while a != b:
+        if a > b:
+            a = a - b
+        else:
+            b = b - a
+    return b
+
+
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+
+print(f"НОД чисел {a} и {b} - {nod(a, b)}")
