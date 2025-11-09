@@ -1,15 +1,22 @@
+# Задание 3
+# Ввести два целых числа a и b (a ≤ b) и вывести
+# сумму квадратов всех чисел от a до b.
+# Формат входных данных: Два целых числа по
+# модулю не больше 100
+# Формат результата: Сумма квадратов от первого
+# введенного числа до второго
+
 while True:
-    user_input_A = input("Введите целое натуральное число А до 100: ")
-    if user_input_A.isdigit() and int(user_input_A) > 0 and int(user_input_A) <= 100:
-        a = int(user_input_A)
+    a = int(input("Введите целое натуральное число А до 100: "))
+    if 0 < a <= 100:
         break
     else:
         print("Введено некорректное значение. Попробуйте снова.")
 
 while True:
-    user_input_B = input("Введите целое натуральное число B до 100: ")
-    if user_input_B.isdigit() and int(user_input_B) > 0 and int(user_input_B) <= 100 and int(user_input_B) >= int(user_input_A):
-        b = int(user_input_B)
+    b = int(input("Введите целое натуральное число B до 100: "))
+    if 0 < b <= 100 and b >= a:
+        b = b
         break
     else:
         print("Введено некорректное значение. Попробуйте снова.")

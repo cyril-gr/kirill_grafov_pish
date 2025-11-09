@@ -1,6 +1,12 @@
+# Задание 1
+# Описать функцию вычисления:
+# f(x) = x **2 if [-2 <= x < 2]
+# f(x) = x ** 2 + 4 x + 5 if [x >= 2]
+# f(x) = 4 if [x < -2]
+
 def function(x):
     if -2 <= x < 2:
-        return x * x
+        return x ** 2
     elif x >= 2:
         return x ** 2 + 4 * x + 5
     elif x < -2:
